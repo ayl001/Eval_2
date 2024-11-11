@@ -1,0 +1,38 @@
+@startuml
+class Utilisateur {
+  -id: int
+  -nom: String
+  -prenom: String
+  -email: String
+  +afficher_competences(): List<Compétence>
+  +indique_disponibilite(c: Compétence): boolean
+}
+
+class Compétence {
+  -id: int
+  -nom: String
+  +afficher(): String
+}
+
+class Créneau {
+  -id: int
+  -date: Date
+  -disponible: boolean
+  +réserver(): boolean
+}
+
+class Echange {
+  -id: int
+  -compétence: Compétence
+  -créneau: Créneau
+  +afficher_détails(): String
+}
+
+Utilisateur "1" -- "*" Compétence : possède >
+Utilisateur "1" -- "*" Créneau : disponible_pour >
+Echange "1" -- "1" Utilisateur : implique >
+Echange "1" -- "1" Compétence : utilise >
+Echange "1" -- "1" Créneau : se_deroule_sur >
+
+@enduml
+
