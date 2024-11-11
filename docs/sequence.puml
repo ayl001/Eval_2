@@ -1,0 +1,17 @@
+@startuml
+actor Utilisateur
+participant "Système" as System
+participant "Base de données" as DB
+
+Utilisateur -> System: Consulter créneaux disponibles
+System -> DB: Rechercher créneaux pour compétence
+DB --> System: Liste des créneaux disponibles
+System --> Utilisateur: Affiche liste des créneaux
+
+Utilisateur -> System: Réserver créneau
+System -> DB: Met à jour créneau comme réservé
+DB --> System: Confirmation de réservation
+System --> Utilisateur: Confirme réservation
+
+@enduml
+
