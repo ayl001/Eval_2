@@ -10,6 +10,7 @@ usecase "Indiquer ses compétences" as U3
 usecase "Indiquer sa disponibilité" as U4
 usecase "Rechercher de l'aide" as U5
 usecase "Consulter les créneaux d'aide d'autres utilisateurs" as U6
+usecase "Réserver un créneau" as U7
 
 Visiteur --> U1
 Visiteur --> U2
@@ -18,5 +19,7 @@ Utilisateur --> U3
 Utilisateur --> U4
 Utilisateur --> U5
 Utilisateur --> U6
+Utilisateur --> U7
 
+Utilisateur -|> Visiteur
 @enduml

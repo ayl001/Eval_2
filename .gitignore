@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django
+*.log
+*.pot
+db.sqlite3
+*.sqlite3-journal
+local_settings.py
+
+# Exclude compiled/migrated files
+*.mo
+*.pyc
+staticfiles/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Environment files
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Notepad++ backup files
+*~
+
+# vi temporary files
+*.swp
+*.swo
