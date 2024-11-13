@@ -5,7 +5,7 @@ class Utilisateur {
   -prenom: String
   -email: String
   +afficher_competences(): List<Compétence>
-  +indique_disponibilite(c: Compétence): boolean
+  +indique_disponibilite(c: Creneau): boolean
 }
 
 class Compétence {
