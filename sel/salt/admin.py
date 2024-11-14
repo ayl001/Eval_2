@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Utilisateur,Creneau,Competence,Echange
+from .models import Utilisateur, Creneau, Competence, Echange
 
 # Register your models here.
 

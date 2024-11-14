@@ -6,8 +6,8 @@ from typing import List, Optional
 class Competence(models.Model):
     nom: str = models.CharField(max_length=100, unique=True)
 
-    def afficher(self) -> str:
-        return self.nom
+    #    def afficher(self) -> str:
+    #       return self.nom
 
     def __str__(self) -> str:
         return self.nom
