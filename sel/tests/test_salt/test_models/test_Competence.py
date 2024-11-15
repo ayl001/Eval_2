@@ -1,4 +1,5 @@
-from sel.salt.models import Competence
+import pytest
+from salt.models import Competence
 
 # Test compétence
 	# test chaîne

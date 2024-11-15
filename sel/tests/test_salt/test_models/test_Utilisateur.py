@@ -1,2 +1,3 @@
-from sel.salt.models import Utilisateur
+import pytest
+from salt.models import Utilisateur
 # test Utilisateur
