@@ -34,5 +34,15 @@ Echange "1" -- "1" Utilisateur : implique >
 Echange "1" -- "1" Compétence : utilise >
 Echange "1" -- "1" Créneau : se_deroule_sur >
 
+
+
+class A {
+}
+
+class B {
+}
+
+
+
 @enduml
 
